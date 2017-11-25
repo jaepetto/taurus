@@ -2,18 +2,18 @@
 execution:
 - concurrency: 1
   #ramp-up: 3m
-  hold-for: 30s
+  hold-for: 5m
   scenario: simple
 
 scenarios:
   simple:
     variables:
-      #basedomain: https://dcsl.epfl.ch
-      basedomain: http://localhost/dcsl
+      basedomain: https://dcsl.epfl.ch
+      #basedomain: http://localhost/dcsl
     store-cache: false
     store-cookie: false
     retrieve-resources: true
-    #retrieve-resources-regex: ^.*(dcsl\.epfl\.ch).*$
+    retrieve-resources-regex: ^.*(dcsl\.epfl\.ch).*$
     concurrent-pool-size: 4
     #think-time: 0.75
     requests:
