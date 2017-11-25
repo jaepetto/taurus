@@ -8,7 +8,7 @@ read CONFIGFILE
 mkdir -p results/$SESSIONDESCRIPTION/$TIMESTAMP/artifacts
 mkdir -p results/$SESSIONDESCRIPTION/$TIMESTAMP/tests
 
-cp -r tests/ results/$SESSIONDESCRIPTION/$TIMESTAMP/tests
+cp -r tests/* results/$SESSIONDESCRIPTION/$TIMESTAMP/tests
 
 docker run \
     -i \
