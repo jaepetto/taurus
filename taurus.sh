@@ -18,4 +18,4 @@ docker run \
     -v $(pwd)/results/$SESSIONDESCRIPTION/$TIMESTAMP/tests:/bzt-configs \
     -v $(pwd)/results/$SESSIONDESCRIPTION/$TIMESTAMP/artifacts:/tmp/artifacts \
     -v $(pwd)/results/$SESSIONDESCRIPTION/$TIMESTAMP:/tmp/results \
-    blazemeter/taurus -o execution.concurrency=$CONCURRENCY $CONFIGFILE
+    blazemeter/taurus -o execution.0.concurrency=$CONCURRENCY $CONFIGFILE
